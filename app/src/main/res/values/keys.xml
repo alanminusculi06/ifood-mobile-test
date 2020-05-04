@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="twitter_consumer_key">value</string>
+    <string name="twitter_consumer_secret">value</string>
+    <string name="twitter_access_token">v</string>
+    <string name="twitter_access_token_secret">value</string>
+    <string name="google_cloud_api_key">value</string>
+</resources>
