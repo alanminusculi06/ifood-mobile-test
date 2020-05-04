@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="twitter_consumer_key">FPIidfqYMVWRvGK4w9SfizdCH</string>
-    <string name="twitter_consumer_secret">n8jJZLwDzL8gvNraZjRXXibvBm1kt2CQLZNW9bR0Jqky39Rirv</string>
-    <string name="twitter_access_token">1230291113480728576-3jp6dyiL8ftt9o6Ti2zzRfSwobYTZ3</string>
-    <string name="twitter_access_token_secret">BzAMnidHxcRfCAocKOEzh7gNDvqJxYT8xhuqfU6zXnaLm</string>
-    <string name="google_cloud_api_key">AIzaSyBiQRnwuS_1r0GngFJZxnIH7ca0ZIv3PxE</string>
+    <string name="twitter_consumer_key">key</string>
+    <string name="twitter_consumer_secret">key</string>
+    <string name="twitter_access_token">key</string>
+    <string name="twitter_access_token_secret">key</string>
+    <string name="google_cloud_api_key">key</string>
 </resources>
