@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">iFood Mobile Test</string>
+    <string name="action_ok">OK</string>
+    <string name="dialog_title_attention">Attention</string>
+
+    <string name="username_fragment_username_hint">Twitter username</string>
+    <string name="username_fragment_next">Next</string>
+    <string name="tweet_positive">Positive</string>
+    <string name="tweet_neutral">Neutral</string>
+    <string name="tweet_negative">Negative</string>
+
+    <string name="splash_alan_minusculi">Alan Minusculi</string>
+    <string name="splash_made_by">Made by</string>
+    <string name="splash_ifood">iFood</string>
+    <string name="at">\@</string>
+    <string name="loading">Loading...</string>
+    <string name="check_this_tweet_classification">Check this tweet classification</string>
+</resources>

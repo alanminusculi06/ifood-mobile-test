@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/screen_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/tweetProfilePicture"
+                style="@style/UserProfilePictureImageView"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:contentDescription="@{tweet.screenName}" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    style="@style/TextViewTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{tweet.screenName}" />
+
+                <TextView
+                    style="@style/TextViewText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{tweet.text}" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/recycler_view_divider" />
+    </LinearLayout>
+
+    <data>
+
+        <variable
+            name="tweet"
+            type="br.com.minusculi.ifoodmobiletest.main.objects.Tweet" />
+    </data>
+</layout>

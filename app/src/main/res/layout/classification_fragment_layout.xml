@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="br.com.minusculi.ifoodmobiletest.ui.main.viewmodels.ViewModel" />
+
+        <import type="android.view.View" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/tweetProfilePicture"
+                style="@style/UserProfilePictureImageView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:contentDescription="@{viewModel.tweet.screenName}" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextViewTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{viewModel.tweet.screenName}" />
+
+                <TextView
+                    style="@style/TextViewText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{viewModel.tweet.text}" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            style="@style/Box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5dp"
+            app:elevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextViewText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:text="@string/loading"
+                    android:visibility="@{viewModel.loading ? View.VISIBLE : View.GONE}" />
+
+                <ProgressBar
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_margin="16dp"
+                    android:indeterminate="true"
+                    android:visibility="@{viewModel.loading ? View.VISIBLE : View.GONE}" />
+
+                <TextView
+                    style="@style/TextViewText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:text="@string/check_this_tweet_classification"
+                    android:visibility="@{viewModel.loading ? View.GONE : View.VISIBLE}" />
+
+                <ImageView
+                    style="@style/ClassificationImageView"
+                    android:contentDescription="@string/tweet_positive"
+                    android:src="@drawable/ic_positive"
+                    android:visibility="@{viewModel.happy ? View.VISIBLE : View.GONE}" />
+
+                <ImageView
+                    style="@style/ClassificationImageView"
+                    android:contentDescription="@string/tweet_neutral"
+                    android:src="@drawable/ic_neutral"
+                    android:visibility="@{viewModel.neutral ? View.VISIBLE : View.GONE}" />
+
+                <ImageView
+                    style="@style/ClassificationImageView"
+                    android:contentDescription="@string/tweet_negative"
+                    android:src="@drawable/ic_negative"
+                    android:visibility="@{viewModel.sad ? View.VISIBLE : View.GONE}" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</layout>

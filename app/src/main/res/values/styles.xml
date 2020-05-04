@@ -1,0 +1,63 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.FullScreen" parent="AppTheme">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="SplashImageView">
+        <item name="srcCompat">@drawable/ic_ifood_logo</item>
+        <item name="tint">@color/splash_logo</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="UserProfilePictureImageView">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_margin">16dp</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+
+    <style name="ClassificationImageView">
+        <item name="android:layout_width">72dp</item>
+        <item name="android:layout_height">72dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_margin">16dp</item>
+    </style>
+
+    <style name="SplashTextFooter">
+        <item name="android:textColor">@color/splash_text_footer</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="SplashTextFooterBold" parent="SplashTextFooter">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TextViewBase">
+        <item name="android:textColor">@color/colorDarkTextColor</item>
+    </style>
+
+    <style name="TextViewTitle" parent="TextViewBase">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextViewText" parent="TextViewBase">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Box">
+        <item name="background">@color/box_bg</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+    </style>
+</resources>
